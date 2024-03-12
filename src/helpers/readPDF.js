@@ -36,17 +36,8 @@ function ReaderPDF({ pdfFile }) {
     reader.readAsArrayBuffer(pdfFile);
   };
 
-  GroupLinesIntoSections(lines);
+  return GroupLinesIntoSections(lines);
 
-  return (
-    <div>
-      <Document file={pdfFile} onLoadSuccess={onDocumentLoadSuccess}>
-        <p>
-          Page 1 of {numPages}
-        </p>
-      </Document>
-    </div>
-  );
 }
 
 export default ReaderPDF;

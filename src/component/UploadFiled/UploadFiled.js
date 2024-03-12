@@ -124,7 +124,7 @@ import styles from "./UploadFiled.module.scss";
 import classNames from "classnames/bind";
 import { Document, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
-import GroupLinesIntoSections from "../../helpers/inline";
+//import GroupLinesIntoSections from "../../helpers/inline";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
@@ -170,7 +170,8 @@ function UploadFiled() {
     reader.readAsArrayBuffer(pdfFile);
   };
 
-  GroupLinesIntoSections(lines);
+  console.log(lines)
+
 
   return (
     <div>
