@@ -1,0 +1,93 @@
+.wrapper + .wrapper{
+    margin-top: 50px;
+}
+
+.product-img{
+    border-radius: 30px;
+    height: 380px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    img{
+        display: block;
+        width: 100%;
+        filter: drop-shadow(0 30px 20px rgba(0, 0, 0, .2));
+        transform: rotate(-24deg);
+        margin-left: -16px;
+    }
+}
+
+.product-name{
+    font-weight: 300;
+    font-family: var(--font-family);
+    font-size: 20px;
+    font-weight: 700;
+    margin: 26px 0 20px;
+    line-height: 1.5;
+}
+
+.product-description{
+    font-weight: 300;
+    font-size: 20px;
+    font-size: 13px;
+
+    color: var(--gray);
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.product-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    label{
+        font-size: 18px;
+        font-weight: 700;
+    }
+}
+
+.addToCard-button{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    text-align: center;
+
+}
+
+.button{
+    width: 50%;
+    height: 100%;
+    background-color: var(--yellow);
+    font-size: 14px;
+
+    cursor: pointer;
+
+    padding: 10px;
+    border-radius: 100px;
+
+    font-weight: 700;
+}
+
+
+.button.inactive{
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    pointer-events: none;
+    cursor: default;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img{
+        width: 20px;
+        height: 20px;
+    }
+}
+
+

@@ -1,0 +1,90 @@
+.wrapper{
+    background-color: var(--white);
+    box-sizing: border-box;
+    width: 360px;
+    height: 600px;
+    box-shadow: 0 3.2px 2.2px rgba(0,0,0,.02), 0 7px 5.4px rgba(0,0,0,.028), 0 12.1px 10.1px rgba(0,0,0,.035), 0 19.8px 18.1px rgba(0,0,0,.042), 0 34.7px 33.8px rgba(0,0,0,.05), 0 81px 81px rgba(0,0,0,.07);
+    border-radius: 30px;
+    overflow: hidden;
+    padding: 0 28px;
+    position: relative;
+    margin-bottom: 20px;
+    &::before{
+        content: "";
+        display: block;
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        border-radius: 100%;
+        background-color: var(--yellow);
+        top: -20%;
+        left: -50%;
+        z-index: 0;
+    }
+}
+
+.wrapper + .wrapper {
+    margin-left: 50px;
+}
+
+.card_Header{
+    height: 18%;
+}
+
+.logo{
+    margin: 12px 0;
+    position: relative;
+    img{
+        display: block;
+        width: 50px;
+    }
+}
+
+.title{
+    margin: 12px 0;
+    position: relative;
+    font-weight: 700;
+    font-family: var(--font-family);
+    font-size: 30px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_Body{
+    flex:1;
+
+    margin: 12px 0;
+    position: relative;
+    overflow-y: auto;
+    max-height: 84%;
+}
+
+.card_Body::-webkit-scrollbar {
+    display: none; 
+  }
+
+@media only screen and (max-width: 1199px){
+    
+}
+  
+@media only screen and (min-width: 768px) and (max-width: 1199px){
+   
+      
+} 
+  
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+    
+}
+  
+@media only screen and (max-width: 768px)  {
+    .wrapper + .wrapper {
+        margin-left: 0;
+    }
+}
+  
+  
+  @media only screen and (max-width: 479px){
+      
+  }
+  
